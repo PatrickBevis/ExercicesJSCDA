@@ -66,11 +66,11 @@ const products = [
   },
 ];
 
-function productList(tab, obj) {
+function productList(tab, cat) {
   const filtredProducts = [];
 
   tab.forEach((produit) => {
-    if (produit.obj === categorie) {
+    if (produit.categorie === cat) {
       filtredProducts.push(produit);
     }
   });
